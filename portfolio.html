@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <!-- Fonts start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <!-- Fonts end -->
+
+        <!-- Normalize styles start-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+        <!-- Normalize styles end-->
+        
+        <!-- Custom styles start -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- Custom styles end -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-container">
+                <nav class="header-nav">
+                    <a class="logo link" href="/">Web<span class="logo-top">Studio</span>
+                    </a>
+                    <ul class="nav-list list">
+                        <li class="nav-list-item">
+                            <a class="nav-link link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link current link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-link link" href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts-list list">
+                    <li class="contacts-list-item">
+                        <!-- <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> -->
+                        <a class="contacts-link link" href="mailto:info@devstudio.com">
+                            <svg class="contact-link-icon">
+                                <use href="./images/sprite.svg#envelope"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts-list-item">
+                        <a class="contacts-link link" href="tel:+380961111111">
+                            <svg class="phone-link-icon">
+                                <use href="./images/sprite.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <!--Portfolio-->
+            <section class="portfolio section">
+                <div class="container portfolio-container">
+                    <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
+                    <ul class="porfolio-buttons-list list">
+                        <li class="porfolio-buttons-item">
+                            <button class="portfolio-button" type="button">Все</button>
+                        </li>
+                        <li class="porfolio-buttons-item">
+                            <button class="portfolio-button" type="button">Веб-сайти</button>
+                        </li>
+                        <li class="porfolio-buttons-item">
+                            <button class="portfolio-button" type="button">Додатки</button>
+                        </li>
+                        <li class="porfolio-buttons-item">
+                            <button class="portfolio-button" type="button">Дизайн</button>
+                        </li>
+                        <li class="porfolio-buttons-item">
+                            <button class="portfolio-button" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+
+                    <ul class="porfolio-cards-list list">
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_1.jpg" alt="Технокряк" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Технокряк</h2>
+                                    <p class="cards-category">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                    <p class="cards-category">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_3.png" alt="Ресторан Seafood" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Ресторан <span lang="en">Seafood</span></h2>
+                                    <p class="cards-category">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_4.jpg" alt="Проект Prime" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Проєкт <span lang="en">Prime</span></h2>
+                                    <p class="cards-category">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_5.jpg" alt="Проект Boxes" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Проєкт <span lang="en">Boxes</span></h2>
+                                    <p class="cards-category">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_6.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title" lang="en">Inspiration has no Borders</h2>
+                                    <p class="cards-category">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Видання <span lang="en">Limited Edition</span></h2>
+                                    <p class="cards-category">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_8.jpg" alt="Проект LAB" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title">Проєкт LAB</h2>
+                                    <p class="cards-category">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="porfolio-cards-item">
+                            <a class="cards-link link" href="">
+                                <div class="cards-wrap-img">
+                                    <img class="cards-img" src="./images/portfolio_9.jpg" alt="Growing Business" width="370" height="294">
+                                    <div class="cards-wrap-text">
+                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                                            sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="cards-title" lang="en">Growing Business</h2>
+                                    <p class="cards-category">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-address">
+                    <a class="logo link" href="/">Web<span class="logo-down">Studio</span>
+                    </a>
+                    <address class="address">
+                        <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
+                        <ul class="address-contacts list">
+                            <li class="address-item">
+                                <a class="address-link link" href="mailto:info@example.com">info@example.com</a><br>
+                            </li>
+                            <li>
+                                <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-sm">
+                    <strong class="footer-sm-text">Приєднуйтесь</strong>
+                    <ul class="footer-sm-list list">
+                        <li class="footer-sm-icon">
+                            <a class="footer-sm-link" href="">
+                                <svg class="footer-link-icon">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-sm-icon">
+                            <a class="footer-sm-link" href="">
+                                <svg class="footer-link-icon">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-sm-icon">
+                            <a class="footer-sm-link" href="">
+                                <svg class="footer-link-icon">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-sm-icon">
+                            <a class="footer-sm-link" href="">
+                                <svg class="footer-link-icon">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
