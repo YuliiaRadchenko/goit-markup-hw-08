@@ -416,6 +416,7 @@
                         </ul>
                     </address>
                 </div>
+
                 <div class="footer-sm">
                     <strong class="footer-sm-text">Приєднуйтесь</strong>
                     <ul class="footer-sm-list list">
@@ -461,6 +462,18 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="footer-form">
+                    <strong class="footer-form-title">Підпишіться на розсилку</strong>
+                    <form class="footer-form-data">
+                        <input class="footer-form-input" type="email" name="mail" placeholder="E-mail"/>
+                        <button class="footer-form-btn" type="submit">Підписатися
+                            <svg class="footer-send-icon">
+                                <use href="./images/sprite.svg#send-icon"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
 
@@ -471,8 +484,64 @@
                         <use href="./images/sprite.svg#modal-close-icon"></use>
                     </svg>
                 </button>
+
+                <form class="modal-form">
+                    <h3 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h3>
+                    <div class="modal-form-field">
+                        <label class="modal-form-label" for="name">Ім'я</label>
+                        <input class="modal-form-input" type="text" name="name" id="name" autofocus />
+                        <span class="modal-icon-wrap">
+                            <svg class="modal-icon">
+                                <use href="./images/sprite.svg#person-icon"></use>                    
+                            </svg>
+                        </span>
+                    </div>
+                
+                    <div class="modal-form-field">
+                        <label class="modal-form-label" for="tel">Телефон</label>
+                        <input class="modal-form-input" type="tel" name="tel" id="tel" />
+                        <span class="modal-icon-wrap">
+                            <svg class="modal-icon">
+                                <use href="./images/sprite.svg#phone-icon"></use>
+                            </svg>
+                        </span>
+                    </div>
+                
+                    <div class="modal-form-field">
+                        <label class="modal-form-label" for="mail">Пошта</label>
+                        <input class="modal-form-input" type="email" name="mail" id="mail" />
+                        <span class="modal-icon-wrap">
+                            <svg class="modal-icon">
+                                <use href="./images/sprite.svg#email-icon"></use>
+                            </svg>
+                        </span>
+                    </div>
+                
+                    <div class="modal-form-field">
+                        <label class="modal-form-label" for="comment">Коментар</label>
+                        <textarea class="modal-form-comment" name="comment" id="comment" rows="6"
+                            placeholder="Введіть текст"></textarea>
+                    </div>
+                
+                    <div class="modal-form-policy">
+                        <label class="policy-confirm">
+                            <input class="policy-checkbox" type="checkbox" name="policy" />
+                            <span class="policy-icon-wrap">
+                                <svg class="checkbox-icon">
+                                    <use href="./images/sprite.svg#icon-check"></use>
+                                </svg>
+                            </span>
+                            Погоджуюся з розсилкою та приймаю  <a class="policy-link" href="">
+                                Умови договору</a>
+                        </label>
+                    </div>
+                    <button class="modal-form-btn" type="submit">Відправити</button>
+                </form>
             </div>
         </div>
+
+        
+
         <script src="./js/modal.js"></script>
     </body>
 </html>
