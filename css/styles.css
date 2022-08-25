@@ -385,7 +385,7 @@ img {
 .modal-form-comment:focus {
   border-color: var(--accent-text-color);
   cursor: pointer;
-  /* outline: none; */
+  outline: none;
 }
 
 .modal-form-input:focus + .modal-icon-wrap {
@@ -506,9 +506,15 @@ img {
   margin-right: 7px;
 }
 
+
+.policy-checkbox:focus + .policy-icon-wrap {
+  outline: 1px solid var(--title-text-color);
+}
+
 .policy-checkbox:checked + .policy-icon-wrap {
   background-color: var(--accent-text-color);
   border: transparent;
+  outline: none;
 }
 
 .checkbox-icon {
