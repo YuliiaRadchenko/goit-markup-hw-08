@@ -23,34 +23,34 @@
     </head>
     <body>
         <header class="header">
-            <div class="container header-container">
-                <nav class="header-nav">
-                    <a class="logo link" href="/">Web<span class="logo-top">Studio</span>
+            <div class="container header__container">
+                <nav class="nav">
+                    <a class="logo link" href="/">Web<span class="logo--top">Studio</span>
                     </a>
-                    <ul class="nav-list list">
-                        <li class="nav-list-item">
-                            <a class="nav-link link" href="./index.html">Студія</a>
+                    <ul class="nav__list list">
+                        <li class="nav__listItem">
+                            <a class="nav__link link" href="./index.html">Студія</a>
                         </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link current link" href="./portfolio.html">Портфоліо</a>
+                        <li class="nav__listItem">
+                            <a class="nav__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link link" href="">Контакти</a>
+                        <li class="nav__listItem">
+                            <a class="nav__link link" href="">Контакти</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts-list list">
-                    <li class="contacts-list-item">
+                <ul class="contacts list">
+                    <li class="contacts__item">
                         <!-- <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> -->
-                        <a class="contacts-link link" href="mailto:info@devstudio.com">
-                            <svg class="contact-link-icon">
+                        <a class="contacts__link link" href="mailto:info@devstudio.com">
+                            <svg class="contacts__mailIcon">
                                 <use href="./images/sprite.svg#envelope"></use>
                             </svg>info@devstudio.com
                         </a>
                     </li>
-                    <li class="contacts-list-item">
-                        <a class="contacts-link link" href="tel:+380961111111">
-                            <svg class="phone-link-icon">
+                    <li class="contacts__item">
+                        <a class="contacts__link link" href="tel:+380961111111">
+                            <svg class="contacts__phoneIcon">
                                 <use href="./images/sprite.svg#smartphone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
@@ -61,166 +61,166 @@
         <main>
             <!--Portfolio-->
             <section class="portfolio section">
-                <div class="container portfolio-container">
-                    <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
-                    <ul class="porfolio-buttons-list list">
-                        <li class="porfolio-buttons-item">
-                            <button class="portfolio-button" type="button">Все</button>
+                <div class="container portfolio__container">
+                    <h1 class="portfolio__title visually-hidden">Портфоліо</h1>
+                    <ul class="portfolio__buttonsList list">
+                        <li class="portfolio__buttonsItem">
+                            <button class="portfolio__button" type="button">Все</button>
                         </li>
-                        <li class="porfolio-buttons-item">
-                            <button class="portfolio-button" type="button">Веб-сайти</button>
+                        <li class="portfolio__buttonsItem">
+                            <button class="portfolio__button" type="button">Веб-сайти</button>
                         </li>
-                        <li class="porfolio-buttons-item">
-                            <button class="portfolio-button" type="button">Додатки</button>
+                        <li class="portfolio__buttonsItem">
+                            <button class="portfolio__button" type="button">Додатки</button>
                         </li>
-                        <li class="porfolio-buttons-item">
-                            <button class="portfolio-button" type="button">Дизайн</button>
+                        <li class="portfolio__buttonsItem">
+                            <button class="portfolio__button" type="button">Дизайн</button>
                         </li>
-                        <li class="porfolio-buttons-item">
-                            <button class="portfolio-button" type="button">Маркетинг</button>
+                        <li class="portfolio__buttonsItem">
+                            <button class="portfolio__button" type="button">Маркетинг</button>
                         </li>
                     </ul>
 
-                    <ul class="porfolio-cards-list list">
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_1.jpg" alt="Технокряк" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                    <ul class="portfolio__cardsList list">
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_1.jpg" alt="Технокряк" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                                         вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Технокряк</h2>
-                                    <p class="cards-category">Веб-сайт</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Технокряк</h2>
+                                    <p class="portfolio__cardsCategory">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                    <p class="cards-category">Дизайн</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                    <p class="portfolio__cardsCategory">Дизайн</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_3.png" alt="Ресторан Seafood" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_3.png" alt="Ресторан Seafood" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Ресторан <span lang="en">Seafood</span></h2>
-                                    <p class="cards-category">Додаток</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Ресторан <span lang="en">Seafood</span></h2>
+                                    <p class="portfolio__cardsCategory">Додаток</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_4.jpg" alt="Проект Prime" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_4.jpg" alt="Проект Prime" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Проєкт <span lang="en">Prime</span></h2>
-                                    <p class="cards-category">Маркетинг</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Проєкт <span lang="en">Prime</span></h2>
+                                    <p class="portfolio__cardsCategory">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_5.jpg" alt="Проект Boxes" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_5.jpg" alt="Проект Boxes" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Проєкт <span lang="en">Boxes</span></h2>
-                                    <p class="cards-category">Додаток</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Проєкт <span lang="en">Boxes</span></h2>
+                                    <p class="portfolio__cardsCategory">Додаток</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_6.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title" lang="en">Inspiration has no Borders</h2>
-                                    <p class="cards-category">Веб-сайт</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle" lang="en">Inspiration has no Borders</h2>
+                                    <p class="portfolio__cardsCategory">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_7.jpg" alt="Издание Limited Edition" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Видання <span lang="en">Limited Edition</span></h2>
-                                    <p class="cards-category">Дизайн</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Видання <span lang="en">Limited Edition</span></h2>
+                                    <p class="portfolio__cardsCategory">Дизайн</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_8.jpg" alt="Проект LAB" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_8.jpg" alt="Проект LAB" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title">Проєкт LAB</h2>
-                                    <p class="cards-category">Маркетинг</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle">Проєкт LAB</h2>
+                                    <p class="portfolio__cardsCategory">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li class="porfolio-cards-item">
-                            <a class="cards-link link" href="">
-                                <div class="cards-wrap-img">
-                                    <img class="cards-img" src="./images/portfolio_9.jpg" alt="Growing Business" width="370" height="294">
-                                    <div class="cards-wrap-text">
-                                        <p class="cards-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
+                        <li class="portfolio__cardsItem">
+                            <a class="portfolio__cardsLink link" href="">
+                                <div class="portfolio__imgWrap">
+                                    <img class="portfolio__img" src="./images/portfolio_9.jpg" alt="Growing Business" width="370" height="294">
+                                    <div class="portfolio__textWrap">
+                                        <p class="portfolio__cardsText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti numquam consequuntur
                                             sapiente saepe possimus deleniti minima tenetur odit reiciendis?</p>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <h2 class="cards-title" lang="en">Growing Business</h2>
-                                    <p class="cards-category">Додаток</p>
+                                <div class="portfolio__cardsContent">
+                                    <h2 class="portfolio__cardsTitle" lang="en">Growing Business</h2>
+                                    <p class="portfolio__cardsCategory">Додаток</p>
                                 </div>
                             </a>
                         </li>
@@ -230,50 +230,50 @@
         </main>
 
         <footer class="footer">
-            <div class="container footer-container">
-                <div class="footer-address">
-                    <a class="logo link" href="/">Web<span class="logo-down">Studio</span>
+            <div class="container footer__container">
+                <div class="footer__address">
+                    <a class="logo link" href="/">Web<span class="logo--down">Studio</span>
                     </a>
                     <address class="address">
-                        <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
-                        <ul class="address-contacts list">
-                            <li class="address-item">
-                                <a class="address-link link" href="mailto:info@example.com">info@example.com</a><br>
+                        <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+                        <ul class="address__contacts list">
+                            <li class="address__item">
+                                <a class="address__link link" href="mailto:info@example.com">info@example.com</a><br>
                             </li>
-                            <li>
-                                <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            <li class="address__item">
+                                <a class="address__link link" href="tel:+380991111111">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
         
-                <div class="footer-sm">
-                    <strong class="footer-sm-text">Приєднуйтесь</strong>
-                    <ul class="footer-sm-list list">
-                        <li class="footer-sm-icon">
-                            <a class="footer-sm-link" href="" aria-label="Instagram">
-                                <svg class="footer-link-icon">
+                <div class="footer social-media__footer">
+                    <strong class="appeal">Приєднуйтесь</strong>
+                    <ul class="social-media__list list">
+                        <li class="social-media__item">
+                            <a class="social-media__link social-media__link--darkBg" href="" aria-label="Instagram">
+                                <svg class="social-media__icon">
                                     <use href="./images/sprite.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-sm-icon">
-                            <a class="footer-sm-link" href="" aria-label="Twitter">
-                                <svg class="footer-link-icon">
+                        <li class="social-media__item">
+                            <a class="social-media__link social-media__link--darkBg" href="" aria-label="Twitter">
+                                <svg class="social-media__icon">
                                     <use href="./images/sprite.svg#twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-sm-icon">
-                            <a class="footer-sm-link" href="" aria-label="Facebook">
-                                <svg class="footer-link-icon">
+                        <li class="social-media__item">
+                            <a class="social-media__link social-media__link--darkBg" href="" aria-label="Facebook">
+                                <svg class="social-media__icon">
                                     <use href="./images/sprite.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-sm-icon">
-                            <a class="footer-sm-link" href="" aria-label="Linkedin">
-                                <svg class="footer-link-icon">
+                        <li class="social-media__item">
+                            <a class="social-media__link social-media__link--darkBg" href="" aria-label="Linkedin">
+                                <svg class="social-media__icon">
                                     <use href="./images/sprite.svg#linkedin"></use>
                                 </svg>
                             </a>
@@ -281,12 +281,12 @@
                     </ul>
                 </div>
         
-                <div class="footer-form">
-                    <strong class="footer-form-title">Підпишіться на розсилку</strong>
-                    <form class="footer-form-data">
-                        <input class="footer-form-input" type="email" name="mail" placeholder="E-mail" />
-                        <button class="footer-form-btn" type="submit">Підписатися
-                            <svg class="footer-send-icon">
+                <div class="form">
+                    <strong class="appeal">Підпишіться на розсилку</strong>
+                    <form class="form__data">
+                        <input class="form__input" type="email" name="mail" placeholder="E-mail" />
+                        <button class="form__button button" type="submit">Підписатися
+                            <svg class="form__icon">
                                 <use href="./images/sprite.svg#send-icon"></use>
                             </svg>
                         </button>
