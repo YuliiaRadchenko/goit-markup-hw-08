@@ -1,0 +1,30 @@
+:root {
+    /* fonts */
+    --main-font: 'Roboto';
+    --secondary-font: 'Raleway';
+
+    /* text colors */
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-top-color: #000000;
+    --accent-text-color: #2196F3;
+    --accent-button-color: #188CE8;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+
+    --portfolio-card-border: #EEEEEE;
+    --header-border-color: #ECECEC;
+    --client-card-border: #AFB1B8;
+
+    /* bg colors */
+    --main-bg-color: #ffffff;
+    --dark-bg-color: #2F303A;
+    --light-bg-color: #F5F4FA;
+
+    --hero-bg-color: #C4C4C4;
+    --hero-overlay: rgba(47, 48, 58, 0.4);
+
+    --sm-icons-main: #afb1b8;
+    --modal-backdrop: rgba(0, 0, 0, 0.2);
+
+    --cards-gap: 30px;
+}

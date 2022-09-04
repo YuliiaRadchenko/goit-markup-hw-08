@@ -1,0 +1,15 @@
+.logo {
+    color: var(--accent-text-color);
+    font-size: 26px;
+    font-weight: 700;
+    font-family: var(--secondary-font), sans-serif;
+    line-height: 1.19;
+
+    &--top {
+        color: var(--logo-top-color);
+    }
+
+    &--down {
+        color: var(--main-bg-color);
+    }
+}

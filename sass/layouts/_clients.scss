@@ -1,0 +1,36 @@
+.clients__links {
+    display: flex;
+    justify-content: center;
+}
+
+.clients__linkCard {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.clients__logoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--client-card-border);
+    background-color: var(--main-bg-color);
+    fill: var(--client-card-border);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+        fill: var(--accent-text-color);
+    }
+}
+
+.clients__logoIcon {
+    width: 106px;
+    height: 60px;
+}

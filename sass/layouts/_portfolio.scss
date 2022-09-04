@@ -1,0 +1,101 @@
+.portfolio__cardsList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__cardsItem {
+    width: calc((100% - 60px) / 3);
+    margin-right: var(--cards-gap);
+    margin-bottom: var(--cards-gap);
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+}
+
+.portfolio__cardsTitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio__cardsCategory {
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+}
+
+.portfolio__cardsLink {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &:hover .portfolio__imgWrap::before,
+    &:hover .portfolio__textWrap,
+    &:focus .portfolio__imgWrap::before,
+    &:focus .portfolio__textWrap {
+        transform: translateY(0);
+    }
+}
+
+.portfolio__cardsContent {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid var(--portfolio-card-border);
+    border-bottom: 1px solid var(--portfolio-card-border);
+    border-left: 1px solid var(--portfolio-card-border);
+}
+
+.portfolio__imgWrap {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        display: inline-block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.portfolio__textWrap {
+    position: absolute;
+    top: 63px;
+    left: 24px;
+    right: 24px;
+    transform: translateY(calc(100% + 126px));
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__cardsText {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--main-bg-color);
+}
