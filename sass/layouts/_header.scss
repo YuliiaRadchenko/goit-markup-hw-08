@@ -10,6 +10,10 @@
 .nav__list {
     display: flex;
     margin-left: 93px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .nav__list .nav__listItem+.nav__listItem {

@@ -1,21 +1,8 @@
-.clients__links {
-    display: flex;
-    justify-content: center;
-}
-
-.clients__linkCard {
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
 .clients__logoLink {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid var(--client-card-border);
@@ -33,4 +20,36 @@
 .clients__logoIcon {
     width: 106px;
     height: 60px;
+}
+
+.clients__links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+
+.clients__linkCard {
+    margin: 15px;
+     
+    // &:not(:last-child) {
+    //     @media screen and (max-width: 1199px) {
+    //         margin-bottom: 15px;
+    //     }
+    // }
+
+    @media screen and (min-width: 480px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: 100%;
+    }
 }
