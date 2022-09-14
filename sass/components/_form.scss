@@ -1,10 +1,6 @@
 .form {
-    @media screen and (max-width: 767px) {
-        margin-top: 60px;
-    }
-
     @media screen and (max-width: 1199px) {
-        width: 450px;
+        // width: 450px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 60px;
@@ -18,7 +14,7 @@
 
 .form__data {
     margin-top: 20px;
-    display: flex;
+    // display: flex;
 
     // @media screen and (max-width: 767px) {
     //     justify-content: center;
@@ -28,10 +24,15 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .form__input {
-    width: 358px;
+    // width: 358px;
+    width: 100%;
     padding: 14px 16px;
     margin-right: 12px;
 
@@ -46,15 +47,19 @@
     background-color: var(--dark-bg-color);
 
     @media screen and (max-width: 767px) {
-        width: 100%;
+        // width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
     @media screen and (max-width: 1199px) {
-        width: 450px;
+        // width: 450px;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
     }
 }
 

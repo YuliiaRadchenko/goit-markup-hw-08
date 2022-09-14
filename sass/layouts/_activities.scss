@@ -1,6 +1,14 @@
-@media screen and (max-width: 1199px) {
-    .activities {
-        display: none;
+// @media screen and (max-width: 1199px) {
+//     .activities {
+//         display: none;
+//     }
+// }
+
+.activities {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
     }
 }
 

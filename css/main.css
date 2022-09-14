@@ -113,14 +113,14 @@ body {
 
 .hero__button {
   padding-top: 10px;
-  padding-right: 32px;
+  padding-right: 24px;
   padding-bottom: 10px;
-  padding-left: 32px;
+  padding-left: 24px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero__button {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 
@@ -132,6 +132,12 @@ body {
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 28px;
+}
+@media screen and (max-width: 1199px) {
+  .form__button {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .container {
@@ -155,6 +161,11 @@ body {
   .container {
     max-width: 1200px;
   }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -192,10 +203,10 @@ body {
 
 .logo {
   color: var(--accent-text-color);
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.17;
   font-weight: 700;
   font-family: var(--secondary-font), sans-serif;
-  line-height: 1.19;
 }
 .logo--top {
   color: var(--logo-top-color);
@@ -203,32 +214,54 @@ body {
 .logo--down {
   color: var(--main-bg-color);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+.nav .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
   .nav .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .contacts {
-    display: none;
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
   }
 }
 
-.contacts .contacts__item + .contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .contacts .contacts__item + .contacts__item {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts .contacts__item + .contacts__item {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 
 .contacts__mailIcon {
@@ -303,19 +336,13 @@ body {
 .hero__title {
   color: var(--main-bg-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  line-height: 1.36;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 1199px) {
-  .hero__title {
-    font-size: 26px;
-    line-height: 1.62;
-  }
 }
 @media screen and (min-width: 480px) {
   .hero__title {
@@ -325,6 +352,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -347,9 +376,12 @@ body {
   height: 20px;
 }
 
-@media screen and (max-width: 767px) {
+.social-media__footer {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
   .social-media__footer {
-    margin-top: 60px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -361,11 +393,7 @@ body {
 .social-media__list {
   display: flex;
   margin-top: 20px;
-}
-@media screen and (max-width: 767px) {
-  .social-media__list {
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .social-media__item {
@@ -398,14 +426,8 @@ body {
   fill: var(--main-bg-color);
 }
 
-@media screen and (max-width: 767px) {
-  .form {
-    margin-top: 60px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .form {
-    width: 450px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
@@ -420,7 +442,6 @@ body {
 
 .form__data {
   margin-top: 20px;
-  display: flex;
 }
 @media screen and (max-width: 1199px) {
   .form__data {
@@ -428,9 +449,14 @@ body {
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .form__data {
+    display: flex;
+  }
+}
 
 .form__input {
-  width: 358px;
+  width: 100%;
   padding: 14px 16px;
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -444,16 +470,19 @@ body {
 }
 @media screen and (max-width: 767px) {
   .form__input {
-    width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 1199px) {
   .form__input {
-    width: 450px;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 358px;
   }
 }
 
@@ -538,6 +567,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: auto;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .nav__mobileButton {
@@ -545,27 +575,102 @@ body {
   }
 }
 
+.nav__mobileIcon-open {
+  transition: 250ms;
+}
+.nav__mobileButton.is-open .nav__mobileIcon-open {
+  opacity: 0;
+}
+
 .nav__mobileIcon-close {
   opacity: 0;
+  transition: 250ms;
+}
+.nav__mobileButton.is-open .nav__mobileIcon-close {
+  opacity: 1;
 }
 
 .mobileMenu {
   position: fixed;
   top: 0;
   left: 0;
+  transform: translateX(100%);
   width: 100%;
   height: 100%;
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
   background-color: var(--main-bg-color);
+  z-index: 100;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobileMenu.is-open {
+  transform: translateX(0);
 }
 
 .mobileMenu__nav {
   margin-bottom: auto;
 }
 
+.mobileMenu__navItem:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobileMenu__navLink {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mobileMenu__navItem .current {
+  color: var(--accent-text-color);
+}
+
+.mobileMenu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobileMenu__contactsItem:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobileMenu__contactsLink {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.mobileMenu__contactsItem .accent {
+  color: var(--accent-text-color);
+  font-size: 34px;
+}
+
+.mobileMenu__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobileMenu__socialsLink {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+}
+
+.mobileMenu__socialsItem:not(:last-child) .mobileMenu__socialsLink {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .header {
+  z-index: 10;
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -575,12 +680,12 @@ body {
 }
 
 .nav__list {
-  display: flex;
-  margin-left: 93px;
+  display: none;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .nav__list {
-    display: none;
+    display: flex;
+    margin-left: 93px;
   }
 }
 
@@ -622,13 +727,13 @@ body {
 .hero {
   background-color: var(--hero-bg-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -651,11 +756,11 @@ body {
 }
 
 .features {
-  padding-bottom: 0;
+  padding-bottom: 60px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .features {
-    padding-bottom: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -715,11 +820,15 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+.activities {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
   .activities {
-    display: none;
+    display: block;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .activities__list {
     display: flex;
@@ -836,6 +945,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .clients__links {

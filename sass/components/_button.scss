@@ -20,13 +20,13 @@
 
 .hero__button {
     padding-top: 10px;
-    padding-right: 32px;
+    padding-right: 24px;
     padding-bottom: 10px;
-    padding-left: 32px;
+    padding-left: 24px;
 
-    @media screen and (max-width: 1199px) {
-        padding-right: 24px;
-        padding-left: 24px;
+    @media screen and (min-width: 1200px) {
+        padding-right: 32px;
+        padding-left: 32px;
     }
 }
 
@@ -39,4 +39,9 @@
     padding-right: 28px;
     padding-bottom: 10px;
     padding-left: 28px;
+
+    @media screen and (max-width: 1199px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
