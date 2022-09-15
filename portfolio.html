@@ -22,12 +22,60 @@
         <!-- <link rel="stylesheet" href="./css/styles.css"> -->
         <!-- Custom styles end -->
     </head>
+
     <body>
         <header class="header">
             <div class="container header__container">
                 <nav class="nav">
                     <a class="logo link" href="/">Web<span class="logo--top">Studio</span>
                     </a>
+        
+                    <button class="nav__mobileButton" type="button" data-menu-button>
+                        <svg class="nav__mobileIcon" width="24" height="16">
+                            <use class="nav__mobileIcon-open" href="./images/sprite.svg#mobile-menu-open"></use>
+                            <use class="nav__mobileIcon-close" href="./images/sprite.svg#mobile-menu-close"></use>
+                        </svg>
+                    </button>
+        
+                    <!-- Mobile menu -->
+                    <div class="mobileMenu" data-menu>
+                        <ul class="mobileMenu__nav list">
+                            <li class="mobileMenu__navItem">
+                                <a class="mobileMenu__navLink link" href="/index.html">Студія</a>
+                            </li>
+                            <li class="mobileMenu__navItem">
+                                <a class="mobileMenu__navLink link current" href="/portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="mobileMenu__navItem">
+                                <a class="mobileMenu__navLink link" href="">Контакти</a>
+                            </li>
+                        </ul>
+        
+                        <ul class="mobileMenu__contacts list">
+                            <li class="mobileMenu__contactsItem">
+                                <a class="mobileMenu__contactsLink link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobileMenu__contactsItem">
+                                <a class="mobileMenu__contactsLink link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+        
+                        <ul class="mobileMenu__socials list">
+                            <li class="mobileMenu__socialsItem">
+                                <a class="mobileMenu__socialsLink link" href="">Instagram</a>
+                            </li>
+                            <li class="mobileMenu__socialsItem">
+                                <a class="mobileMenu__socialsLink link" href="">Twitter</a>
+                            </li>
+                            <li class="mobileMenu__socialsItem">
+                                <a class="mobileMenu__socialsLink link" href="">Facebook</a>
+                            </li>
+                            <li class="mobileMenu__socialsItem">
+                                <a class="mobileMenu__socialsLink link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+        
                     <ul class="nav__list list">
                         <li class="nav__listItem">
                             <a class="nav__link link" href="./index.html">Студія</a>
@@ -42,7 +90,6 @@
                 </nav>
                 <ul class="contacts list">
                     <li class="contacts__item">
-                        <!-- <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> -->
                         <a class="contacts__link link" href="mailto:info@devstudio.com">
                             <svg class="contacts__mailIcon">
                                 <use href="./images/sprite.svg#envelope"></use>
@@ -58,7 +105,7 @@
                 </ul>
             </div>
         </header>
-
+        
         <main>
             <!--Portfolio-->
             <section class="portfolio section">
@@ -230,6 +277,7 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="container footer__container">
                 <div class="footer__address">
@@ -239,10 +287,10 @@
                         <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
                         <ul class="address__contacts list">
                             <li class="address__item">
-                                <a class="address__link link" href="mailto:info@example.com">info@example.com</a><br>
+                                <a class="address__link link" href="mailto:info@devstudio.com">info@devstudio.com</a><br>
                             </li>
                             <li class="address__item">
-                                <a class="address__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                                <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
                             </li>
                         </ul>
                     </address>
@@ -295,5 +343,7 @@
                 </div>
             </div>
         </footer>
+        
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

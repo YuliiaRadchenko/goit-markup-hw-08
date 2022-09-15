@@ -304,16 +304,8 @@ body {
   color: var(--title-text-color);
   font-weight: 700;
   text-align: center;
-}
-@media screen and (min-width: 480px) {
-  .features__title,
-.activities__title,
-.team__title,
-.portfolio__title,
-.clients__title {
-    font-size: 28px;
-    line-height: 1.18;
-  }
+  font-size: 28px;
+  line-height: 1.18;
 }
 @media screen and (min-width: 1200px) {
   .features__title,
@@ -547,15 +539,27 @@ body {
 .portfolio__buttonsList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__buttonsList {
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .portfolio__buttonsItem {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .portfolio__buttonsItem:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__buttonsItem {
+    margin-bottom: 0;
+  }
 }
 
 .nav__mobileButton {
@@ -955,11 +959,7 @@ body {
 
 .clients__linkCard {
   margin: 15px;
-}
-@media screen and (min-width: 480px) {
-  .clients__linkCard {
-    flex-basis: calc((100% - 60px) / 2);
-  }
+  flex-basis: calc((100% - 60px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients__linkCard {
@@ -1187,21 +1187,34 @@ body {
   }
 }
 
-.portfolio__cardsList {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .portfolio__cardsList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.portfolio__cardsItem {
-  width: calc((100% - 60px) / 3);
-  margin-right: var(--cards-gap);
-  margin-bottom: var(--cards-gap);
+@media screen and (min-width: 768px) {
+  .portfolio__cardsItem {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
-.portfolio__cardsItem:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio__cardsItem {
+    width: calc((100% - 90px) / 3);
+  }
 }
-.portfolio__cardsItem:nth-last-child(-n+3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .portfolio__cardsItem:first-child .portfolio__cardsContent {
+    padding-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__cardsItem:first-child .portfolio__cardsContent {
+    padding-bottom: 20px;
+  }
 }
 
 .portfolio__cardsTitle {
@@ -1264,7 +1277,7 @@ body {
   top: 63px;
   left: 24px;
   right: 24px;
-  transform: translateY(calc(100% + 126px));
+  transform: translateY(calc(100% + 200px));
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

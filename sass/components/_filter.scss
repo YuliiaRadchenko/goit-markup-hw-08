@@ -27,14 +27,24 @@
 .portfolio__buttonsList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-right: 0;
+    }
 }
 
 .portfolio__buttonsItem {
     margin-right: 8px;
+    margin-bottom: 15px;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
     }
 }
