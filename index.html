@@ -170,7 +170,17 @@
 
                         <li class="activities__listItem">
                             <div class="activities__wrap">
-                                <img class="activities__img" src="./images/box_1.jpg" alt="Планшет і клавиатура" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/activities/activities-webp/1-activities-dt.webp 1x, ./images/activities/activities-webp/1-activities-dt@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/activities/activities-jpg/1-activities-dt.jpg 1x, ./images/activities/activities-jpg/1-activities-dt@2x.jpg 2x"
+                                        type="image/jpg" />
+                                                                        
+                                    <img class="activities__img" src="./images/activities/activities-jpg/1-activities-dt.jpg" alt="Планшет і клавиатура" width="370"
+                                        height="294" />
+                                </picture>
                                 <div class="activities__textWrap">
                                     <p class="activities__text">Десктопні додатки</p>
                                 </div>
@@ -179,7 +189,17 @@
 
                         <li class="activities__listItem">
                             <div class="activities__wrap">
-                                <img class="activities__img" src="./images/box_2.jpg" alt="Ноутбук і смартфон" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/activities/activities-webp/2-activities-dt.webp 1x, ./images/activities/activities-webp/2-activities-dt@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/activities/activities-jpg/2-activities-dt.jpg 1x, ./images/activities/activities-jpg/2-activities-dt@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img class="activities__img" src="./images/activities/activities-jpg/2-activities-dt.jpg" alt="Ноутбук і смартфон"
+                                        width="370" height="294" />
+                                </picture>
                                 <div class="activities__textWrap">
                                     <p class="activities__text">Мобільні додатки</p>
                                 </div>
@@ -188,7 +208,17 @@
 
                         <li class="activities__listItem">
                             <div class="activities__wrap">
-                                <img class="activities__img" src="./images/box_3.jpg" alt="Планшет, стилус і мишка" width="370">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/activities/activities-webp/3-activities-dt.webp 1x, ./images/activities/activities-webp/3-activities-dt@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/activities/activities-jpg/3-activities-dt.jpg 1x, ./images/activities/activities-jpg/3-activities-dt@2x.jpg 2x"
+                                        type="image/jpg" />
+                                
+                                    <img class="activities__img" src="./images/activities/activities-jpg/3-activities-dt.jpg" alt="Планшет, стилус і мишка"
+                                        width="370" height="294" />
+                                </picture>
                                 <div class="activities__textWrap">
                                     <p class="activities__text">Дизайнерські рішення</p>
                                 </div>
@@ -203,8 +233,33 @@
                 <div class="container team__container">
                     <h2 class="team__title">Наша команда</h2>
                     <ul class="team__list list">
+
                         <li class="team__listItem">
-                            <img class="team__listImg" src="./images/team_1.jpg" alt="Product Designer" width="270">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-webp/1-team-dt.webp 1x, ./images/team/team-webp/1-team-dt@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-jpg/1-team-dt.jpg 1x, ./images/team/team-jpg/1-team-dt@2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-webp/1-team-tb.webp 1x, ./images/team/team-webp/1-team-tb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-jpg/1-team-tb.jpg 1x, ./images/team/team-jpg/1-team-tb@2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-webp/1-team-mb.webp 1x, ./images/team/team-webp/1-team-mb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-jpg/1-team-mb.jpg 1x, ./images/team/team-jpg/1-team-mb@2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <img class="team__listImg" src="./images/team/team-jpg/1-team-mb.jpg" alt="Product Designer" width="450"
+                                    height="460" />
+                            </picture>
                             <h3 class="team__listTitle">Ігор Дем'яненко</h3>
                             <p class="team__listText" lang="en">Product Designer</p>
                             <ul class="social-media list">
@@ -250,8 +305,30 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="team__listItem">
-                            <img class="team__listImg" src="./images/team_2.jpg" alt="Frontend Developer" width="270">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-webp/2-team-dt.webp 1x, ./images/team/team-webp/2-team-dt@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-jpg/2-team-dt.jpg 1x, ./images/team/team-jpg/2-team-dt@2x.jpg 2x" type="image/jpg" />
+                            
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-webp/2-team-tb.webp 1x, ./images/team/team-webp/2-team-tb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-jpg/2-team-tb.jpg 1x, ./images/team/team-jpg/2-team-tb@2x.jpg 2x" type="image/jpg" />
+                            
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-webp/2-team-mb.webp 1x, ./images/team/team-webp/2-team-mb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-jpg/2-team-mb.jpg 1x, ./images/team/team-jpg/2-team-mb@2x.jpg 2x" type="image/jpg" />
+                            
+                                <img class="team__listImg" src="./images/team/team-jpg/2-team-mb.jpg" alt="Frontend Developer" width="450"
+                                    height="460" />
+                            </picture>
                             <h3 class="team__listTitle">Ольга Рєпіна</h3>
                             <p class="team__listText" lang="en">Frontend Developer</p>
                             <ul class="social-media list">
@@ -297,8 +374,30 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="team__listItem">
-                            <img class="team__listImg" src="./images/team_3.jpg" alt="Marketing" width="270">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-webp/3-team-dt.webp 1x, ./images/team/team-webp/3-team-dt@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-jpg/3-team-dt.jpg 1x, ./images/team/team-jpg/3-team-dt@2x.jpg 2x" type="image/jpg" />
+                            
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-webp/3-team-tb.webp 1x, ./images/team/team-webp/3-team-tb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-jpg/3-team-tb.jpg 1x, ./images/team/team-jpg/3-team-tb@2x.jpg 2x" type="image/jpg" />
+                            
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-webp/3-team-mb.webp 1x, ./images/team/team-webp/3-team-mb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-jpg/3-team-mb.jpg 1x, ./images/team/team-jpg/3-team-mb@2x.jpg 2x" type="image/jpg" />
+                            
+                                <img class="team__listImg" src="./images/team/team-jpg/3-team-mb.jpg" alt="Marketing" width="450"
+                                    height="460" />
+                            </picture>
                             <h3 class="team__listTitle">Микола Тарасов</h3>
                             <p class="team__listText" lang="en">Marketing</p>
                             <ul class="social-media list">
@@ -344,8 +443,29 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="team__listItem">
-                            <img class="team__listImg" src="./images/team_4.jpg" alt="UI Designer" width="270">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-webp/4-team-dt.webp 1x, ./images/team/team-webp/4-team-dt@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/team/team-jpg/4-team-dt.jpg 1x, ./images/team/team-jpg/4-team-dt@2x.jpg 2x" type="image/jpg" />
+                            
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-webp/4-team-tb.webp 1x, ./images/team/team-webp/4-team-tb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/team/team-jpg/4-team-tb.jpg 1x, ./images/team/team-jpg/4-team-tb@2x.jpg 2x" type="image/jpg" />
+                            
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-webp/4-team-mb.webp 1x, ./images/team/team-webp/4-team-mb@2x.webp 2x"
+                                    type="image/webp" />
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/team/team-jpg/4-team-mb.jpg 1x, ./images/team/team-jpg/4-team-mb@2x.jpg 2x" type="image/jpg" />
+                            
+                                <img class="team__listImg" src="./images/team/team-jpg/4-team-mb.jpg" alt="UI Designer" width="450" height="460" />
+                            </picture>
                             <h3 class="team__listTitle">Михайло Єрмаков</h3>
                             <p class="team__listText" lang="en">UI Designer</p>
                             <ul class="social-media list">

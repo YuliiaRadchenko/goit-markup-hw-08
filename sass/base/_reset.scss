@@ -10,9 +10,7 @@ ul {
 img {
     display: block;
     height: auto;
-
-    // Temporary
-    width: 100%;
+    max-width: 100%;
 }
 
 body {
