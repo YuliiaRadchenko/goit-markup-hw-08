@@ -1,4 +1,4 @@
-.nav__mobileButton {
+.nav__mobileButton-open {
     background-color: transparent;
     border: none;
     width: 40px;
@@ -7,28 +7,58 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    z-index: 1000;
-
+    cursor: pointer;
+    // z-index: 1000;
+    
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
 
-.nav__mobileIcon-open {
-    transition: 250ms;
-    .nav__mobileButton.is-open & {
-        opacity: 0;
-    }
+.nav__mobileButton-open:hover .nav__mobileIcon,
+.nav__mobileButton-open:focus .nav__mobileIcon,
+.nav__mobileButton-close:hover .nav__mobileIcon,
+.nav__mobileButton-close:focus .nav__mobileIcon {
+    fill: var(--accent-text-color);
 }
 
-.nav__mobileIcon-close {
-    opacity: 0;
-    transition: 250ms;
+.nav__mobileIcon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .nav__mobileButton.is-open & {
+.nav__mobileButton-close {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+// .nav__mobileIcon-open {
+//     transition: 250ms;
+//     .nav__mobileButton.is-open & {
+//         opacity: 0;
+//     }
+// }
+
+    .mobileMenu.is-open {
         opacity: 1;
     }
-}
+
+
+// .nav__mobileIcon-close {
+//     // opacity: 0;
+//     transition: 250ms;
+
+//     .nav__mobileButton.is-open & {
+//         opacity: 1;
+//     }
+// }
 
 
 
@@ -41,19 +71,29 @@
 
     width: 100%;
     height: 100%;
-    padding: 48px 40px;
+    padding: 10px 0px 48px 0px;
 
     display: flex;
     flex-direction: column;
 
     background-color: var(--main-bg-color);
-    z-index: 100;
+    z-index: 1;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
         transform: translateX(0);
     }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobileMenu__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .mobileMenu__nav {

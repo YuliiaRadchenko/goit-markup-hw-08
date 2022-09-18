@@ -30,50 +30,63 @@
                     <a class="logo link" href="/">Web<span class="logo--top">Studio</span>
                     </a>
                     
-                    <button class="nav__mobileButton" type="button" data-menu-button>
+                    <!-- <button class="nav__mobileButton" type="button" data-menu-button>
                         <svg class="nav__mobileIcon" width="24" height="16">
                             <use class="nav__mobileIcon-open" href="./images/sprite.svg#mobile-menu-open"></use>
                             <use class="nav__mobileIcon-close" href="./images/sprite.svg#mobile-menu-close"></use>
+                        </svg>
+                    </button> -->
+
+                    <button class="nav__mobileButton-open" type="button" data-menu-open>
+                        <svg class="nav__mobileIcon" width="24" height="16">
+                            <use class="nav__mobileIcon-open" href="./images/sprite.svg#mobile-menu-open"></use>
                         </svg>
                     </button>
 
                     <!-- Mobile menu -->
                     <div class="mobileMenu" data-menu>
-                        <ul class="mobileMenu__nav list">
-                            <li class="mobileMenu__navItem">
-                                <a class="mobileMenu__navLink link current" href="/index.html">Студія</a>
-                            </li>
-                            <li class="mobileMenu__navItem">
-                                <a class="mobileMenu__navLink link" href="/portfolio.html">Портфоліо</a>
-                            </li>
-                            <li class="mobileMenu__navItem">
-                                <a class="mobileMenu__navLink link" href="">Контакти</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="mobileMenu__contacts list">
-                            <li class="mobileMenu__contactsItem">
-                                <a class="mobileMenu__contactsLink link accent" href="tel:+380961111111">+38 096 111 11 11</a>
-                            </li>
-                            <li class="mobileMenu__contactsItem">
-                                <a class="mobileMenu__contactsLink link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                            </li>
-                        </ul>
-                    
-                        <ul class="mobileMenu__socials list">
-                            <li class="mobileMenu__socialsItem">
-                                <a class="mobileMenu__socialsLink link" href="">Instagram</a>
-                            </li>
-                            <li class="mobileMenu__socialsItem">
-                                <a class="mobileMenu__socialsLink link" href="">Twitter</a>
-                            </li>
-                            <li class="mobileMenu__socialsItem">
-                                <a class="mobileMenu__socialsLink link" href="">Facebook</a>
-                            </li>
-                            <li class="mobileMenu__socialsItem">
-                                <a class="mobileMenu__socialsLink link" href="">LinkedIn</a>
-                            </li>
-                        </ul>
+                        <div class="mobileMenu__container container">
+                            <button class="nav__mobileButton-close" type="button" data-menu-close>
+                                <svg class="nav__mobileIcon" width="19" height="19">
+                                    <use class="nav__mobileIcon-close" href="./images/sprite.svg#mobile-menu-close"></use>
+                                </svg>
+                            </button>
+                            <ul class="mobileMenu__nav list">
+                                <li class="mobileMenu__navItem">
+                                    <a class="mobileMenu__navLink link current" href="/index.html">Студія</a>
+                                </li>
+                                <li class="mobileMenu__navItem">
+                                    <a class="mobileMenu__navLink link" href="/portfolio.html">Портфоліо</a>
+                                </li>
+                                <li class="mobileMenu__navItem">
+                                    <a class="mobileMenu__navLink link" href="">Контакти</a>
+                                </li>
+                            </ul>
+                            
+                            <ul class="mobileMenu__contacts list">
+                                <li class="mobileMenu__contactsItem">
+                                    <a class="mobileMenu__contactsLink link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+                                </li>
+                                <li class="mobileMenu__contactsItem">
+                                    <a class="mobileMenu__contactsLink link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                            
+                            <ul class="mobileMenu__socials list">
+                                <li class="mobileMenu__socialsItem">
+                                    <a class="mobileMenu__socialsLink link" href="">Instagram</a>
+                                </li>
+                                <li class="mobileMenu__socialsItem">
+                                    <a class="mobileMenu__socialsLink link" href="">Twitter</a>
+                                </li>
+                                <li class="mobileMenu__socialsItem">
+                                    <a class="mobileMenu__socialsLink link" href="">Facebook</a>
+                                </li>
+                                <li class="mobileMenu__socialsItem">
+                                    <a class="mobileMenu__socialsLink link" href="">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <ul class="nav__list list">
